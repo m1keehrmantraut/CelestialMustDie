@@ -13,7 +13,7 @@ TagManager:
   - UI
   - Enemy
   - Obstacles
-  - 
+  - Parallax
   - 
   - 
   - 
@@ -38,6 +38,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Parallax
+    uniqueID: 3048593571
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Foregroud
+    uniqueID: 1937154155
     locked: 0
