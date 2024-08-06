@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 03cf0d53d15d67e4ab69900f2303edf8
+guid: a3bd88c3a8a191c459ad4ce407a62c74
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,9 +43,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 128
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -108,112 +108,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: gg1_0
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 61
-        width: 37
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 77c5c67bd5870854a8bd77844d395514
-      internalID: -1219072624
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gg1_1
-      rect:
-        serializedVersion: 2
-        x: 71
-        y: 42
-        width: 14
-        height: 28
-      alignment: 9
-      pivot: {x: 0.35714287, y: 0.6428572}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: adfd0efc25da690498c9bbd9d74af33c
-      internalID: -218757432
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gg1_2
-      rect:
-        serializedVersion: 2
-        x: 93
-        y: 62
-        width: 12
-        height: 6
-      alignment: 9
-      pivot: {x: 0.16666667, y: 0.6666667}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 02c5d7bdef36b1f4aa42a9a8dbee7735
-      internalID: -1325076287
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gg1_3
-      rect:
-        serializedVersion: 2
-        x: 94
-        y: 87
-        width: 30
-        height: 4
-      alignment: 9
-      pivot: {x: 0.20054626, y: 0.2705803}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b96b29d1f6d03e94e82fc99962ae0839
-      internalID: -1397491008
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gg1_4
-      rect:
-        serializedVersion: 2
-        x: 107
-        y: 62
-        width: 13
-        height: 6
-      alignment: 9
-      pivot: {x: 0.042193487, y: 0.3450648}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 41f92e59f31516449ae03ba6dd1704bd
-      internalID: -1138838013
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -224,12 +119,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      gg1_0: -1219072624
-      gg1_1: -218757432
-      gg1_2: -1325076287
-      gg1_3: -1397491008
-      gg1_4: -1138838013
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

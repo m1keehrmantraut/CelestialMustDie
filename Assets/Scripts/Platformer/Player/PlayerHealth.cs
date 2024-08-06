@@ -7,7 +7,7 @@ public class PlayerHealth : MonoBehaviour
     private int currentHealth;
     [SerializeField] private HealthBar healthBar;
 
-    [SerializeField] private Animator _animator;
+    //[SerializeField] private Animator _animator;
     
     
     void Start ()
@@ -20,7 +20,7 @@ public class PlayerHealth : MonoBehaviour
         
         //if (!_heroKnight.isBlock)
         //{
-            _animator.SetTrigger("Hurt");
+            //_animator.SetTrigger("Hurt");
             currentHealth -= damage;
             healthBar.SetHealth(currentHealth);
         //    _heroKnight.m_rolling = false;

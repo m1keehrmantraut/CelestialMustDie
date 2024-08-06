@@ -18,7 +18,7 @@ TagManager:
   - Parallax2
   - Parallax3
   - Parallax4
-  - 
+  - Fog
   - 
   - 
   - 
@@ -46,4 +46,10 @@ TagManager:
     locked: 0
   - name: Foregroud
     uniqueID: 1937154155
+    locked: 0
+  - name: UI
+    uniqueID: 3030457965
+    locked: 0
+  - name: Fog
+    uniqueID: 1649173237
     locked: 0
