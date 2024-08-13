@@ -1,5 +1,7 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Rendering;
 
 public class InteractableObject : MonoBehaviour
 {
@@ -7,11 +9,17 @@ public class InteractableObject : MonoBehaviour
 
     [SerializeField] private UnityEvent interactEvents;
     
-    private GameObject info;
+    [SerializeField] private GameObject info;
 
-    private void FixedUpdate()
+    [SerializeField] private Transform infoPosition;
+
+    [SerializeField] private Material outline;
+    
+    private GameObject tempInfo;
+    
+    private void Update()
     {
-        if (Input.GetKeyDown("e"))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             InteractActions();
         }
@@ -21,13 +29,25 @@ public class InteractableObject : MonoBehaviour
     {
         if (other.CompareTag("Player") && isActive)
         {
-            Instantiate(info, gameObject.transform);
+            tempInfo = Instantiate(info, infoPosition);
+            outline.SetFloat("_OutlineEnabled", true ? 1f : 0f);
+        }
+    }
+    
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player") && isActive)
+        {
+            Destroy(tempInfo);
+            outline.SetFloat("_OutlineEnabled", false ? 1f : 0f);
         }
     }
 
     private void InteractActions()
     {
         interactEvents.Invoke();
-        Destroy(info);
+        Destroy(tempInfo);
+        isActive = false;
+        outline.SetFloat("_OutlineEnabled", false ? 1f : 0f);
     }
 }

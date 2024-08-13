@@ -7,11 +7,15 @@ public class PlayerShooting : MonoBehaviour
     [SerializeField] [Tooltip("Enemy layer for raycast detect")]
     private LayerMask layerMask;
 
+    [SerializeField] private LayerMask ignoreLayer;
+
     [SerializeField] [Tooltip("Bullet explosion effect ")]
     private GameObject impactEffect;
 
     [SerializeField] [Tooltip("The gun laser vfx")]
     private LineRenderer blasterLine;
+
+    [SerializeField] private Animator _animator;
     
     [SerializeField]
     private Transform _firePoint;
@@ -23,16 +27,14 @@ public class PlayerShooting : MonoBehaviour
         _firePoint = point;
     }
 
-    private void Update()
+    public void ShootingInput()
     {
-        if (Input.GetButtonDown("Fire1"))
-        {
-            StartCoroutine(Shoot());
-        }
+        StartCoroutine(Shoot());
     }
 
     IEnumerator Shoot()
     {
+        _animator.SetTrigger("Shoot");
         RaycastHit2D hit = Physics2D.Raycast(_firePoint.position, _firePoint.right);
         if (hit)
         {
